@@ -1,0 +1,8 @@
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: black;
+    justify-items: center;
+    align-content: center;
+    margin: 40px 0;
+}

@@ -6,3 +6,10 @@
     align-content: center;
     margin: 40px 0;
 }
+
+.loading-text,
+.error-white {
+    color: white;
+    text-align: center;
+    width: 80vw;
+}

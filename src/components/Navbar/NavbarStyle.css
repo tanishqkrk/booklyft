@@ -3,10 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-bottom: 0.5px solid whitesmoke; */
+    border-bottom: 0.5px solid lightgrey;
     background-color: var(--background);
-    height: 90px;
-    z-index: 2;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    z-index: 20;
+    position: relative;
 }
 
 .navbar__logo,
@@ -27,9 +29,10 @@
 }
 
 .navbar__logo--title {
-    color: #fff;
+    /* color: #fff; */
     text-decoration: none;
     font-size: 18px;
+    color: var(--color);
 }
 
 .navbar__search {
@@ -84,6 +87,19 @@
     text-decoration: none;
 }
 
+.searchOn {
+    transform: translateY(118%);
+}
+
+.navbar_shopping_cart,
+.navbar_user {
+    display: block;
+}
+
+.navbar_signup_button {
+    display: none;
+}
+
 @media(max-width: 930px) {
     .navbar__search {
         display: flex;
@@ -91,30 +107,57 @@
         align-items: center;
     }
 
-    .navbar__search--hamIcon {
-        display: flex;
-    }
+
 
     .navbar__search--box,
     .navbar__search--icon {
         display: none;
     }
 
+    .navbar__logo,
+    .navbar__search,
     .navbar__links {
-        width: 20%;
+        width: 100%;
+    }
+
+    .navbar__search {
+        width: fit-content;
+    }
+
+    .navbar__search--hamIcon {
+        display: flex;
+        width: fit-content;
     }
 
     .navbar__links--link-link {
         word-break: keep-all;
     }
+
+    .navbar__links {
+        justify-content: flex-end;
+    }
 }
 
 @media(max-width: 750px) {
     .navbar__search {
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
+    }
+
+    .navbar__account {
+        display: none;
+    }
+}
+
+@media(max-width: 450px) {
+    .navbar__logo--img {
+        margin: 0;
+    }
+
+    .navbar__logo {
+        width: fit-content;
     }
 
     .navbar__links {
-        display: none;
+        width: fit-content;
     }
 }

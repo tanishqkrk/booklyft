@@ -5,7 +5,7 @@ import Products from '../components/Products/Products'
 
 const HomeScreen = () => (
     <>
-        {/* <Hero></Hero> */}
+        <Hero></Hero>
         <Products></Products>
     </>
 )

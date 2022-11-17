@@ -1,6 +1,5 @@
 import React from 'react'
 import Product from './Product'
-// import data from '../../../server/data'
 import './ProductsStyles.css'
 import { useEffect, useState, useReducer } from 'react'
 import axios from 'axios'
@@ -51,7 +50,7 @@ const Products = () => {
                     error ? (<div className='error-text'>{error}</div>)
                         :
                         products.map((product) => (
-                            <Product url={`/product/${product.slug}`} key={product.slug} name={product.name} images={product.images} price={product.price} author={product.author}></Product>
+                            <Product key={product.slug} url={`/products/${product.slug}`} name={product.name} images={product.images} price={product.price} author={product.author}></Product>
                         ))
             }
         </div>

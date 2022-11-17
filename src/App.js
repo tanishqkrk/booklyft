@@ -14,10 +14,10 @@ function App() {
 
       <Navbar></Navbar>
       <Routes>
-        <Route path='/product/:slug' element={<ProductScreen />}></Route>
+        <Route path='/products/slug/:slug' element={<ProductScreen />}></Route>
         <Route path="/" element={<HomeScreen />}></Route>
       </Routes>
-      <Utilitybar></Utilitybar>
+      {/* <Utilitybar></Utilitybar> */}
 
     </BrowserRouter>
   );

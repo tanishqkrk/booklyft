@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-    --theme-color: rgb(0, 9, 131);
-    --border-radius: 5px;
+    --theme-color: #150050;
+    --border-radius: 8px;
+    --product-name: 25px;
+    --product-author: 12px;
+    --product-price: 15px;
+    --background: #121212
 }
 
 body {
     margin: 0;
     font-family: 'Cabin', sans-serif;
-    background-color: black;
+    background-color: var(--background);
 }

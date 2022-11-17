@@ -5,18 +5,20 @@ import Products from './components/Products/Products';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import { Utilitybar } from './components/Navbar/Utilitybar/Utilitybar';
+
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Navbar></Navbar>
-        <Routes>
-          <Route path='/product/:slug' element={<ProductScreen />}></Route>
-          <Route path="/" element={<HomeScreen />}></Route>
-        </Routes>
 
-      </div>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path='/product/:slug' element={<ProductScreen />}></Route>
+        <Route path="/" element={<HomeScreen />}></Route>
+      </Routes>
+      <Utilitybar></Utilitybar>
+
     </BrowserRouter>
   );
 }

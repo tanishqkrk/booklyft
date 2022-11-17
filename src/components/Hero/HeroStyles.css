@@ -9,7 +9,7 @@
 .hero__title {
     position: absolute;
     top: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 70%);
+    background: linear-gradient(180deg, var(--background) 0%, transparent 70%);
     width: 100%;
     font-size: 25px;
     color: white;
@@ -23,7 +23,7 @@
     bottom: 0;
     display: flex;
     align-items: flex-end;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 70%);
+    background: linear-gradient(360deg, var(--background) 0%, transparent 70%);
     width: 100%;
     font-size: 50px;
     font-weight: 400;
